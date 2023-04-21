@@ -3,10 +3,9 @@ Imports System.IO
 Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Windows.Forms.Clipboard
-Imports System.String
 
 
-Public Class frmMain
+Public Class Form1
 
     Function md5(ByVal file_name As String)
         Dim hash = md5.Create()
@@ -55,9 +54,6 @@ Public Class frmMain
         md5code = buff.ToString()
         lblmd5.Text = md5code
         lblPath.Text = "檔案路徑：" & OpenFileDialog1.FileName()
-        txtMD5Hash.Text = ""
-        lblPathSec.Text = "檔案路徑：(N/A)"
-        lblMD5Sec.Text = "(N/A)"
         Exit Sub
 Error_Proc:
         lblPath.Text = "讀取過程發生錯誤，因此無法讀出MD5，錯誤內容如下：" & Err.Description
@@ -98,7 +94,6 @@ Error_Proc:
         md5code = buff.ToString()
         lblmd5.Text = md5code
         lblPathSec.Text = "檔案路徑：" & OpenFileDialog1.FileName()
-        lblMD5Sec.Text = md5code
         If lblPath.Text = lblPathSec.Text Then
             Label2.Text = "檔案完整性無誤"
             PictureBox1.Image = My.Resources.check
@@ -113,11 +108,7 @@ Error_Proc:
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim md5Yes As String
-        md5Yes = txtMD5Hash.Text
-        md5Yes = md5Yes.ToUpper()
-        txtMD5Hash.Text = md5Yes
-        If lblmd5.Text = md5Yes Then
+        If lblmd5.Text = txtMD5Hash.Text Then
             Label2.Text = "檔案完整性無誤"
             PictureBox1.Image = My.Resources.check
         Else

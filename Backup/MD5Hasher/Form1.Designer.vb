@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmMain
+Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form 覆寫 Dispose 以清除元件清單。
@@ -22,35 +22,31 @@ Partial Class frmMain
     '請不要使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.btnOpenFile = New System.Windows.Forms.Button()
-        Me.lblmd5 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblPath = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.tabCheck = New System.Windows.Forms.TabControl()
-        Me.tabFromFile = New System.Windows.Forms.TabPage()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblMD5Sec = New System.Windows.Forms.Label()
-        Me.lblPathSec = New System.Windows.Forms.Label()
-        Me.btnCheckFileSec = New System.Windows.Forms.Button()
-        Me.tabFromText = New System.Windows.Forms.TabPage()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtMD5Hash = New System.Windows.Forms.TextBox()
-        Me.btnPaste = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnAbout = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnCpoyMD5 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
+        Me.btnOpenFile = New System.Windows.Forms.Button
+        Me.lblmd5 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.lblPath = New System.Windows.Forms.Label
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.tabCheck = New System.Windows.Forms.TabControl
+        Me.tabFromFile = New System.Windows.Forms.TabPage
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.lblMD5Sec = New System.Windows.Forms.Label
+        Me.lblPathSec = New System.Windows.Forms.Label
+        Me.btnCheckFileSec = New System.Windows.Forms.Button
+        Me.tabFromText = New System.Windows.Forms.TabPage
+        Me.Button1 = New System.Windows.Forms.Button
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.txtMD5Hash = New System.Windows.Forms.TextBox
+        Me.btnPaste = New System.Windows.Forms.Button
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.btnCpoyMD5 = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         Me.tabCheck.SuspendLayout()
         Me.tabFromFile.SuspendLayout()
         Me.tabFromText.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'OpenFileDialog1
@@ -96,7 +92,7 @@ Partial Class frmMain
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.tabCheck)
-        Me.GroupBox1.Location = New System.Drawing.Point(14, 101)
+        Me.GroupBox1.Location = New System.Drawing.Point(14, 128)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(419, 127)
         Me.GroupBox1.TabIndex = 9
@@ -216,26 +212,17 @@ Partial Class frmMain
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("新細明體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Label2.Location = New System.Drawing.Point(70, 248)
+        Me.Label2.Location = New System.Drawing.Point(70, 275)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(98, 22)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "尚未驗證"
         '
-        'btnAbout
-        '
-        Me.btnAbout.Location = New System.Drawing.Point(358, 261)
-        Me.btnAbout.Name = "btnAbout"
-        Me.btnAbout.Size = New System.Drawing.Size(75, 23)
-        Me.btnAbout.TabIndex = 10
-        Me.btnAbout.Text = "關於(&A)"
-        Me.btnAbout.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.question
         Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.question
-        Me.PictureBox1.Location = New System.Drawing.Point(14, 234)
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 261)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -245,29 +232,17 @@ Partial Class frmMain
         'btnCpoyMD5
         '
         Me.btnCpoyMD5.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.copy
-        Me.btnCpoyMD5.Location = New System.Drawing.Point(405, 67)
+        Me.btnCpoyMD5.Location = New System.Drawing.Point(405, 87)
         Me.btnCpoyMD5.Name = "btnCpoyMD5"
         Me.btnCpoyMD5.Size = New System.Drawing.Size(28, 28)
         Me.btnCpoyMD5.TabIndex = 5
         Me.btnCpoyMD5.UseVisualStyleBackColor = True
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.Hasher64
-        Me.PictureBox2.Location = New System.Drawing.Point(193, 234)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 11
-        Me.PictureBox2.TabStop = False
-        '
-        'frmMain
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(445, 296)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.btnAbout)
+        Me.ClientSize = New System.Drawing.Size(445, 351)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
@@ -276,8 +251,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblmd5)
         Me.Controls.Add(Me.btnOpenFile)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "frmMain"
+        Me.Name = "Form1"
         Me.Text = "MD5Hasher"
         Me.GroupBox1.ResumeLayout(False)
         Me.tabCheck.ResumeLayout(False)
@@ -286,7 +260,6 @@ Partial Class frmMain
         Me.tabFromText.ResumeLayout(False)
         Me.tabFromText.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -311,7 +284,5 @@ Partial Class frmMain
     Friend WithEvents txtMD5Hash As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents btnAbout As System.Windows.Forms.Button
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 
 End Class
