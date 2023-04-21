@@ -58,6 +58,8 @@ Public Class frmMain
         txtMD5Hash.Text = ""
         lblPathSec.Text = "檔案路徑：(N/A)"
         lblMD5Sec.Text = "(N/A)"
+        PictureBox1.Image = My.Resources.question
+        Label2.Text = "尚未驗證"
         Exit Sub
 Error_Proc:
         lblPath.Text = "讀取過程發生錯誤，因此無法讀出MD5，錯誤內容如下：" & Err.Description
@@ -136,5 +138,9 @@ Error_Proc:
                 PictureBox1.Image = My.Resources._error
             End If
         End If
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "MD5Hasher v" & My.Application.Info.Version.Major & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.Revision
     End Sub
 End Class

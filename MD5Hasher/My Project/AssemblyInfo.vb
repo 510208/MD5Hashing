@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' 檢閱組件屬性的值
 
-<Assembly: AssemblyTitle("WindowsApplication1")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("WindowsApplication1")> 
+<Assembly: AssemblyTitle("MD5Hasher")> 
+<Assembly: AssemblyDescription("檢閱MD5數值")> 
+<Assembly: AssemblyCompany("510208")> 
+<Assembly: AssemblyProduct("MD5Hasher by 510208")> 
 <Assembly: AssemblyCopyright("Copyright ©  2023")> 
 <Assembly: AssemblyTrademark("")> 
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' 指定為預設值:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.1.0")> 
+<Assembly: AssemblyFileVersion("1.0.1.0")> 

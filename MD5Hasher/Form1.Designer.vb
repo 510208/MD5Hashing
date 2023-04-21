@@ -89,7 +89,7 @@ Partial Class frmMain
         '
         Me.lblPath.Location = New System.Drawing.Point(12, 17)
         Me.lblPath.Name = "lblPath"
-        Me.lblPath.Size = New System.Drawing.Size(421, 18)
+        Me.lblPath.Size = New System.Drawing.Size(351, 18)
         Me.lblPath.TabIndex = 4
         Me.lblPath.Text = "檔案路徑：(N/A)"
         '
@@ -215,10 +215,10 @@ Partial Class frmMain
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("新細明體", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Label2.Location = New System.Drawing.Point(70, 248)
+        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label2.Location = New System.Drawing.Point(70, 245)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(98, 22)
+        Me.Label2.Size = New System.Drawing.Size(101, 30)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "尚未驗證"
         '
@@ -233,7 +233,6 @@ Partial Class frmMain
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.question
         Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.question
         Me.PictureBox1.Location = New System.Drawing.Point(14, 234)
         Me.PictureBox1.Name = "PictureBox1"
@@ -254,7 +253,7 @@ Partial Class frmMain
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.WindowsApplication1.My.Resources.Resources.Hasher64
-        Me.PictureBox2.Location = New System.Drawing.Point(193, 234)
+        Me.PictureBox2.Location = New System.Drawing.Point(369, 12)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -266,9 +265,8 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(445, 296)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.btnAbout)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnAbout)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnCpoyMD5)
@@ -276,6 +274,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblmd5)
         Me.Controls.Add(Me.btnOpenFile)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
         Me.Text = "MD5Hasher"
